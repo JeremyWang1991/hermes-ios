@@ -21,6 +21,11 @@
 		3A3377CB193A6DF30016B22E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3377AD193A6DF30016B22E /* UIKit.framework */; };
 		3A3377D3193A6DF30016B22E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A3377D1193A6DF30016B22E /* InfoPlist.strings */; };
 		3A3377D5193A6DF30016B22E /* hermes_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3377D4193A6DF30016B22E /* hermes_iosTests.m */; };
+		3A3377E0193A6E510016B22E /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3377DF193A6E510016B22E /* PayViewController.m */; };
+		3A3377E2193A736E0016B22E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3377E1193A736E0016B22E /* CoreBluetooth.framework */; };
+		3A3377E4193A73720016B22E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3377E3193A73720016B22E /* CoreLocation.framework */; };
+		3A3377E7193A777E0016B22E /* PayPalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3377E6193A777E0016B22E /* PayPalViewController.m */; };
+		3A3377EF193A7ED30016B22E /* libPayPalMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A3377E9193A7ED30016B22E /* libPayPalMobile.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,18 @@
 		3A3377D0193A6DF30016B22E /* hermes-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "hermes-iosTests-Info.plist"; sourceTree = "<group>"; };
 		3A3377D2193A6DF30016B22E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3A3377D4193A6DF30016B22E /* hermes_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hermes_iosTests.m; sourceTree = "<group>"; };
+		3A3377DE193A6E510016B22E /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		3A3377DF193A6E510016B22E /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
+		3A3377E1193A736E0016B22E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3A3377E3193A73720016B22E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A3377E5193A777E0016B22E /* PayPalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalViewController.h; sourceTree = "<group>"; };
+		3A3377E6193A777E0016B22E /* PayPalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPalViewController.m; sourceTree = "<group>"; };
+		3A3377E9193A7ED30016B22E /* libPayPalMobile.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPayPalMobile.a; sourceTree = "<group>"; };
+		3A3377EA193A7ED30016B22E /* PayPalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalConfiguration.h; sourceTree = "<group>"; };
+		3A3377EB193A7ED30016B22E /* PayPalFuturePaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalFuturePaymentViewController.h; sourceTree = "<group>"; };
+		3A3377EC193A7ED30016B22E /* PayPalMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalMobile.h; sourceTree = "<group>"; };
+		3A3377ED193A7ED30016B22E /* PayPalPayment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPayment.h; sourceTree = "<group>"; };
+		3A3377EE193A7ED30016B22E /* PayPalPaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPalPaymentViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3377EF193A7ED30016B22E /* libPayPalMobile.a in Frameworks */,
+				3A3377E4193A73720016B22E /* CoreLocation.framework in Frameworks */,
+				3A3377E2193A736E0016B22E /* CoreBluetooth.framework in Frameworks */,
 				3A3377AC193A6DF30016B22E /* CoreGraphics.framework in Frameworks */,
 				3A3377AE193A6DF30016B22E /* UIKit.framework in Frameworks */,
 				3A3377AA193A6DF30016B22E /* Foundation.framework in Frameworks */,
@@ -82,6 +102,7 @@
 		3A33779D193A6DF30016B22E = {
 			isa = PBXGroup;
 			children = (
+				3A3377E8193A7ED30016B22E /* PayPalMobile */,
 				3A3377AF193A6DF30016B22E /* hermes-ios */,
 				3A3377CE193A6DF30016B22E /* hermes-iosTests */,
 				3A3377A8193A6DF30016B22E /* Frameworks */,
@@ -101,6 +122,8 @@
 		3A3377A8193A6DF30016B22E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A3377E3193A73720016B22E /* CoreLocation.framework */,
+				3A3377E1193A736E0016B22E /* CoreBluetooth.framework */,
 				3A3377A9193A6DF30016B22E /* Foundation.framework */,
 				3A3377AB193A6DF30016B22E /* CoreGraphics.framework */,
 				3A3377AD193A6DF30016B22E /* UIKit.framework */,
@@ -117,6 +140,10 @@
 				3A3377BB193A6DF30016B22E /* Main.storyboard */,
 				3A3377BE193A6DF30016B22E /* ViewController.h */,
 				3A3377BF193A6DF30016B22E /* ViewController.m */,
+				3A3377DE193A6E510016B22E /* PayViewController.h */,
+				3A3377DF193A6E510016B22E /* PayViewController.m */,
+				3A3377E5193A777E0016B22E /* PayPalViewController.h */,
+				3A3377E6193A777E0016B22E /* PayPalViewController.m */,
 				3A3377C1193A6DF30016B22E /* Images.xcassets */,
 				3A3377B0193A6DF30016B22E /* Supporting Files */,
 			);
@@ -150,6 +177,19 @@
 				3A3377D1193A6DF30016B22E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3A3377E8193A7ED30016B22E /* PayPalMobile */ = {
+			isa = PBXGroup;
+			children = (
+				3A3377E9193A7ED30016B22E /* libPayPalMobile.a */,
+				3A3377EA193A7ED30016B22E /* PayPalConfiguration.h */,
+				3A3377EB193A7ED30016B22E /* PayPalFuturePaymentViewController.h */,
+				3A3377EC193A7ED30016B22E /* PayPalMobile.h */,
+				3A3377ED193A7ED30016B22E /* PayPalPayment.h */,
+				3A3377EE193A7ED30016B22E /* PayPalPaymentViewController.h */,
+			);
+			path = PayPalMobile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +291,9 @@
 			files = (
 				3A3377C0193A6DF30016B22E /* ViewController.m in Sources */,
 				3A3377BA193A6DF30016B22E /* AppDelegate.m in Sources */,
+				3A3377E7193A777E0016B22E /* PayPalViewController.m in Sources */,
 				3A3377B6193A6DF30016B22E /* main.m in Sources */,
+				3A3377E0193A6E510016B22E /* PayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +421,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hermes-ios/hermes-ios-Prefix.pch";
 				INFOPLIST_FILE = "hermes-ios/hermes-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +439,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hermes-ios/hermes-ios-Prefix.pch";
 				INFOPLIST_FILE = "hermes-ios/hermes-ios-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PayPalMobile",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
