@@ -12,8 +12,11 @@
 @interface PayViewController : UIViewController <CLLocationManagerDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *stationLabel;
 @property (strong, nonatomic) IBOutlet UILabel *tokensLabel;
+@property (strong, nonatomic) IBOutlet UILabel *receiptLabel;
+- (IBAction)resetBeacon:(id)sender;
 
 @property (strong, nonatomic) CLBeaconRegion *beaconRegion;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) IBOutlet UIButton *receiptButton;
 
 @end

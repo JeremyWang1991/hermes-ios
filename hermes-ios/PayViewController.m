@@ -7,8 +7,11 @@
 //
 
 #import "PayViewController.h"
+#import "BuyViewController.h"
 
-@interface PayViewController ()
+@interface PayViewController () {
+    BOOL showing;
+}
 @end
 
 @implementation PayViewController
@@ -17,6 +20,8 @@ NSDate *paidDate;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    showing=NO;
 	// Do any additional setup after loading the view.
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -24,11 +29,36 @@ NSDate *paidDate;
     [self locationManager:self.locationManager didStartMonitoringForRegion:self.beaconRegion];
     self.navigationController.navigationBarHidden = NO;
 
-    self.tokensLabel.text = @"5";
+    self.tokensLabel.text = @"0";
     paidDate = [NSDate date];
     
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.leftBarButtonItem = nil;
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+
+    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(pushBuy)];
+    self.navigationItem.rightBarButtonItem = anotherButton;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    showing = NO;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([defaults objectForKey:@"tokens"] == NULL) {
+        [defaults setInteger:0 forKey:@"tokens"];
+        [defaults synchronize];
+    }
+    else {
+        self.tokensLabel.text = [NSString stringWithFormat:@"%@",[defaults objectForKey:@"tokens"]];
+    }
+    
+    if([defaults objectForKey:@"timeLabel"] != NULL) {
+        self.receiptLabel.text = @"View Current Reciept";
+    }
+}
+
+-(void)pushBuy{
+    BuyViewController *secondView=[[BuyViewController alloc] initWithNibName:@"BuyViewController" bundle:nil];
+    [self.navigationController pushViewController:secondView animated:YES];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
@@ -54,18 +84,20 @@ NSDate *paidDate;
 -(void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region {
     CLBeacon *beacon = [[CLBeacon alloc] init];
     beacon = [beacons lastObject];
-    
-    if (beacon.rssi>-34) {
+    NSLog(@"%ld",(long)beacon.rssi);
+    if (beacon.rssi>-32 && beacon.rssi< -10) {
         [self eatToken];
     }
 }
 
 - (void)eatToken {
-    if(abs([paidDate timeIntervalSinceDate:[NSDate date]]) > 10) {
+    if(showing==NO) {
+    if(abs([paidDate timeIntervalSinceDate:[NSDate date]]) > 1) {
         paidDate = [NSDate date];
-        //int tokensRemaining = [self.tokensLabel.text intValue]-1;
-        //self.tokensLabel.text = [NSString stringWithFormat:@"%d",tokensRemaining];
-        //self.view.backgroundColor = [UIColor greenColor];
+
+              [self performSegueWithIdentifier:@"ticketSegue" sender:self];
+        showing =YES;
+    }
     }
 }
 
@@ -75,4 +107,8 @@ NSDate *paidDate;
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)resetBeacon:(id)sender {
+    [self locationManager:self.locationManager didStartMonitoringForRegion:self.beaconRegion];
+
+}
 @end

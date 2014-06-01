@@ -48,12 +48,13 @@ static NSString * const sampleDescription4 = @"Nam libero tempore, cum soluta no
 
     //rootView = futurePaymentViewController.view;
 
-    [self showIntroWithCrossDissolve];
+    [self performSegueWithIdentifier:@"tokenSegue" sender:self];
 }
 
 -(void)introDidFinish:(EAIntroView *)introView {
-    PayPalFuturePaymentViewController *futurePaymentViewController = [[PayPalFuturePaymentViewController alloc] initWithConfiguration:self.payPalConfig delegate:self];
-    [self presentViewController:futurePaymentViewController animated:YES completion:nil];
+//    PayPalFuturePaymentViewController *futurePaymentViewController = [[PayPalFuturePaymentViewController alloc] initWithConfiguration:self.payPalConfig delegate:self];
+//    [self presentViewController:futurePaymentViewController animated:YES completion:nil];
+    [self performSegueWithIdentifier:@"tokenSegue" sender:self];
 }
 
 -(void)dismissKeyboard {

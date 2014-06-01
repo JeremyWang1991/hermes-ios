@@ -55,6 +55,20 @@
 		3A33787A193ABAE40016B22E /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A337872193ABAE40016B22E /* plus.png */; };
 		3A33787B193ABAE40016B22E /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A337873193ABAE40016B22E /* ticket.png */; };
 		3A33787C193ABAE40016B22E /* ttc_banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A337874193ABAE40016B22E /* ttc_banner.png */; };
+		3A33787F193B46CB0016B22E /* TicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A33787E193B46CB0016B22E /* TicketViewController.m */; };
+		3A337881193B48790016B22E /* card_second.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A337880193B48790016B22E /* card_second.png */; };
+		3A337896193B4F5D0016B22E /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A337884193B4F5D0016B22E /* AFHTTPRequestOperation.m */; };
+		3A337897193B4F5D0016B22E /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A337886193B4F5D0016B22E /* AFHTTPRequestOperationManager.m */; };
+		3A337898193B4F5D0016B22E /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A337888193B4F5D0016B22E /* AFHTTPSessionManager.m */; };
+		3A337899193B4F5D0016B22E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A33788B193B4F5D0016B22E /* AFNetworkReachabilityManager.m */; };
+		3A33789A193B4F5D0016B22E /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A33788D193B4F5D0016B22E /* AFSecurityPolicy.m */; };
+		3A33789B193B4F5D0016B22E /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A33788F193B4F5D0016B22E /* AFURLConnectionOperation.m */; };
+		3A33789C193B4F5D0016B22E /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A337891193B4F5D0016B22E /* AFURLRequestSerialization.m */; };
+		3A33789D193B4F5D0016B22E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A337893193B4F5D0016B22E /* AFURLResponseSerialization.m */; };
+		3A33789E193B4F5D0016B22E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A337895193B4F5D0016B22E /* AFURLSessionManager.m */; };
+		3A3378A5193B56560016B22E /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3378A3193B56560016B22E /* BuyViewController.m */; };
+		3A3378A6193B56560016B22E /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3378A4193B56560016B22E /* BuyViewController.xib */; };
+		3A3378A8193B58FA0016B22E /* coin_pass_it.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3378A7193B58FA0016B22E /* coin_pass_it.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +145,32 @@
 		3A337872193ABAE40016B22E /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		3A337873193ABAE40016B22E /* ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticket.png; sourceTree = "<group>"; };
 		3A337874193ABAE40016B22E /* ttc_banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ttc_banner.png; sourceTree = "<group>"; };
+		3A33787D193B46CB0016B22E /* TicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketViewController.h; sourceTree = "<group>"; };
+		3A33787E193B46CB0016B22E /* TicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketViewController.m; sourceTree = "<group>"; };
+		3A337880193B48790016B22E /* card_second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_second.png; sourceTree = "<group>"; };
+		3A337883193B4F5D0016B22E /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		3A337884193B4F5D0016B22E /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		3A337885193B4F5D0016B22E /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		3A337886193B4F5D0016B22E /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		3A337887193B4F5D0016B22E /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		3A337888193B4F5D0016B22E /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3A337889193B4F5D0016B22E /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		3A33788A193B4F5D0016B22E /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		3A33788B193B4F5D0016B22E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		3A33788C193B4F5D0016B22E /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		3A33788D193B4F5D0016B22E /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		3A33788E193B4F5D0016B22E /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		3A33788F193B4F5D0016B22E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		3A337890193B4F5D0016B22E /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		3A337891193B4F5D0016B22E /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		3A337892193B4F5D0016B22E /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		3A337893193B4F5D0016B22E /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		3A337894193B4F5D0016B22E /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		3A337895193B4F5D0016B22E /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		3A3378A2193B56560016B22E /* BuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyViewController.h; sourceTree = "<group>"; };
+		3A3378A3193B56560016B22E /* BuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyViewController.m; sourceTree = "<group>"; };
+		3A3378A4193B56560016B22E /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
+		3A3378A7193B58FA0016B22E /* coin_pass_it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coin_pass_it.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +241,9 @@
 		3A3377AF193A6DF30016B22E /* hermes-ios */ = {
 			isa = PBXGroup;
 			children = (
+				3A3378A2193B56560016B22E /* BuyViewController.h */,
+				3A3378A3193B56560016B22E /* BuyViewController.m */,
+				3A3378A4193B56560016B22E /* BuyViewController.xib */,
 				3A3377B8193A6DF30016B22E /* AppDelegate.h */,
 				3A3377B9193A6DF30016B22E /* AppDelegate.m */,
 				3A3377BB193A6DF30016B22E /* Main.storyboard */,
@@ -210,6 +253,8 @@
 				3A3377DF193A6E510016B22E /* PayViewController.m */,
 				3A3377E5193A777E0016B22E /* PayPalViewController.h */,
 				3A3377E6193A777E0016B22E /* PayPalViewController.m */,
+				3A33787D193B46CB0016B22E /* TicketViewController.h */,
+				3A33787E193B46CB0016B22E /* TicketViewController.m */,
 				3A3377C1193A6DF30016B22E /* Images.xcassets */,
 				3A3377B0193A6DF30016B22E /* Supporting Files */,
 			);
@@ -221,6 +266,8 @@
 			children = (
 				3A33785F193A9E040016B22E /* PayPalMobile */,
 				3A337823193A9A4A0016B22E /* Intro */,
+				3A3378A7193B58FA0016B22E /* coin_pass_it.png */,
+				3A337880193B48790016B22E /* card_second.png */,
 				3A33781D193A99A80016B22E /* EAIntroPage.h */,
 				3A33781E193A99A80016B22E /* EAIntroPage.m */,
 				3A33781F193A99A80016B22E /* EAIntroView.h */,
@@ -239,6 +286,7 @@
 				3A337872193ABAE40016B22E /* plus.png */,
 				3A337873193ABAE40016B22E /* ticket.png */,
 				3A337874193ABAE40016B22E /* ttc_banner.png */,
+				3A337882193B4F5D0016B22E /* AFNetworking */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -294,6 +342,32 @@
 				3A337865193A9E040016B22E /* PayPalPaymentViewController.h */,
 			);
 			path = PayPalMobile;
+			sourceTree = "<group>";
+		};
+		3A337882193B4F5D0016B22E /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3A337883193B4F5D0016B22E /* AFHTTPRequestOperation.h */,
+				3A337884193B4F5D0016B22E /* AFHTTPRequestOperation.m */,
+				3A337885193B4F5D0016B22E /* AFHTTPRequestOperationManager.h */,
+				3A337886193B4F5D0016B22E /* AFHTTPRequestOperationManager.m */,
+				3A337887193B4F5D0016B22E /* AFHTTPSessionManager.h */,
+				3A337888193B4F5D0016B22E /* AFHTTPSessionManager.m */,
+				3A337889193B4F5D0016B22E /* AFNetworking.h */,
+				3A33788A193B4F5D0016B22E /* AFNetworkReachabilityManager.h */,
+				3A33788B193B4F5D0016B22E /* AFNetworkReachabilityManager.m */,
+				3A33788C193B4F5D0016B22E /* AFSecurityPolicy.h */,
+				3A33788D193B4F5D0016B22E /* AFSecurityPolicy.m */,
+				3A33788E193B4F5D0016B22E /* AFURLConnectionOperation.h */,
+				3A33788F193B4F5D0016B22E /* AFURLConnectionOperation.m */,
+				3A337890193B4F5D0016B22E /* AFURLRequestSerialization.h */,
+				3A337891193B4F5D0016B22E /* AFURLRequestSerialization.m */,
+				3A337892193B4F5D0016B22E /* AFURLResponseSerialization.h */,
+				3A337893193B4F5D0016B22E /* AFURLResponseSerialization.m */,
+				3A337894193B4F5D0016B22E /* AFURLSessionManager.h */,
+				3A337895193B4F5D0016B22E /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,7 +459,9 @@
 				3A3377BD193A6DF30016B22E /* Main.storyboard in Resources */,
 				3A337837193A9A4A0016B22E /* bigLogo@2x.png in Resources */,
 				3A33783A193A9A4A0016B22E /* icon3@2x.png in Resources */,
+				3A3378A6193B56560016B22E /* BuyViewController.xib in Resources */,
 				3A337875193ABAE40016B22E /* app_icon.png in Resources */,
+				3A337881193B48790016B22E /* card_second.png in Resources */,
 				3A337840193A9A4A0016B22E /* title3@2x.png in Resources */,
 				3A33787C193ABAE40016B22E /* ttc_banner.png in Resources */,
 				3A33783E193A9A4A0016B22E /* title1@2x.png in Resources */,
@@ -395,6 +471,7 @@
 				3A33787B193ABAE40016B22E /* ticket.png in Resources */,
 				3A337876193ABAE40016B22E /* coin.png in Resources */,
 				3A33783B193A9A4A0016B22E /* pageDot.png in Resources */,
+				3A3378A8193B58FA0016B22E /* coin_pass_it.png in Resources */,
 				3A33783F193A9A4A0016B22E /* title2@2x.png in Resources */,
 				3A337834193A9A4A0016B22E /* bg2@2x.png in Resources */,
 				3A33787A193ABAE40016B22E /* plus.png in Resources */,
@@ -416,10 +493,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A33789A193B4F5D0016B22E /* AFSecurityPolicy.m in Sources */,
 				3A337821193A99A80016B22E /* EAIntroPage.m in Sources */,
+				3A337899193B4F5D0016B22E /* AFNetworkReachabilityManager.m in Sources */,
 				3A3377C0193A6DF30016B22E /* ViewController.m in Sources */,
+				3A33789B193B4F5D0016B22E /* AFURLConnectionOperation.m in Sources */,
+				3A337896193B4F5D0016B22E /* AFHTTPRequestOperation.m in Sources */,
+				3A337898193B4F5D0016B22E /* AFHTTPSessionManager.m in Sources */,
+				3A33789C193B4F5D0016B22E /* AFURLRequestSerialization.m in Sources */,
 				3A3377BA193A6DF30016B22E /* AppDelegate.m in Sources */,
+				3A33789E193B4F5D0016B22E /* AFURLSessionManager.m in Sources */,
+				3A33787F193B46CB0016B22E /* TicketViewController.m in Sources */,
+				3A337897193B4F5D0016B22E /* AFHTTPRequestOperationManager.m in Sources */,
 				3A33781C193A99950016B22E /* SMPageControl.m in Sources */,
+				3A33789D193B4F5D0016B22E /* AFURLResponseSerialization.m in Sources */,
+				3A3378A5193B56560016B22E /* BuyViewController.m in Sources */,
 				3A3377E7193A777E0016B22E /* PayPalViewController.m in Sources */,
 				3A337822193A99A80016B22E /* EAIntroView.m in Sources */,
 				3A3377B6193A6DF30016B22E /* main.m in Sources */,
