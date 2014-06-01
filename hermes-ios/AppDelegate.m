@@ -7,12 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "PayPalMobile.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
+                                                           PayPalEnvironmentSandbox : @"AUVlAxCW3tNE5NONWG9gMuwYq-EQcMbb7wsZn13oI--bOv8ha-oZMSdOLpT9"}];
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     return YES;
 }
 							

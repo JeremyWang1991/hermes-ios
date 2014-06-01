@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EAIntroView.h"
+#import "PayPalMobile.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <EAIntroDelegate, PayPalFuturePaymentDelegate, UIPopoverControllerDelegate>
+@property(nonatomic, strong, readwrite) NSString *environment;
+- (IBAction)signinPressed:(id)sender;
 
 @end

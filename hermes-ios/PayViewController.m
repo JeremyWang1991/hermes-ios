@@ -22,9 +22,13 @@ NSDate *paidDate;
     self.locationManager.delegate = self;
     [self initRegion];
     [self locationManager:self.locationManager didStartMonitoringForRegion:self.beaconRegion];
-    
+    self.navigationController.navigationBarHidden = NO;
+
     self.tokensLabel.text = @"5";
     paidDate = [NSDate date];
+    
+    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.leftBarButtonItem = nil;
 }
 
 - (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region {
@@ -59,9 +63,9 @@ NSDate *paidDate;
 - (void)eatToken {
     if(abs([paidDate timeIntervalSinceDate:[NSDate date]]) > 10) {
         paidDate = [NSDate date];
-        int tokensRemaining = [self.tokensLabel.text intValue]-1;
-        self.tokensLabel.text = [NSString stringWithFormat:@"%d",tokensRemaining];
-        self.view.backgroundColor = [UIColor greenColor];
+        //int tokensRemaining = [self.tokensLabel.text intValue]-1;
+        //self.tokensLabel.text = [NSString stringWithFormat:@"%d",tokensRemaining];
+        //self.view.backgroundColor = [UIColor greenColor];
     }
 }
 
